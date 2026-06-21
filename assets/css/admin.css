@@ -1,0 +1,305 @@
+/* ==================== 后台样式 ==================== */
+.kina-bili-admin {
+    max-width: 1200px;
+}
+
+.kina-bili-admin-header {
+    background: linear-gradient(135deg, #FB7299 0%, #e85a82 50%, #c44569 100%);
+    color: #fff;
+    padding: 32px 36px;
+    border-radius: 12px;
+    margin: 20px 0 24px 0;
+    box-shadow: 0 8px 24px rgba(251, 114, 153, 0.3);
+}
+
+.kina-bili-admin-header h1 {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+}
+
+.kina-bili-admin-header p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 14px;
+    margin: 0;
+}
+
+.kina-bili-admin-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.kina-bili-section-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 28px;
+    border: 1px solid #e2e4e9;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.kina-bili-section-card h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin: 0 0 20px 0;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #FB7299;
+    display: inline-block;
+}
+
+/* 短代码卡片网格 */
+.kina-bili-shortcode-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.kina-bili-code-card {
+    background: linear-gradient(145deg, #f8f9fc 0%, #fff 100%);
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #e8eaf0;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.kina-bili-code-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, #FB7299 0%, #e85a82 100%);
+}
+
+.kina-bili-code-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(251, 114, 153, 0.12);
+    border-color: #FB7299;
+}
+
+.kina-bili-code-card code {
+    display: block;
+    background: #1a1a2e;
+    color: #FB7299;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-family: 'Consolas', 'Monaco', monospace;
+    margin-bottom: 12px;
+    word-break: break-all;
+}
+
+.kina-bili-code-card h4 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin: 0 0 10px 0;
+}
+
+.kina-bili-code-card ul {
+    margin: 0 0 12px 0;
+    padding-left: 18px;
+    color: #5a5a6e;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.kina-bili-code-card li {
+    margin-bottom: 2px;
+}
+
+.kina-bili-tag {
+    display: inline-block;
+    background: rgba(251, 114, 153, 0.1);
+    color: #FB7299;
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+/* 配置表单 */
+.kina-bili-form {
+    margin-top: 16px;
+}
+
+.kina-bili-input-wrap {
+    display: flex;
+    align-items: center;
+    background: #f8f9fc;
+    border: 1px solid #d0d4dc;
+    border-radius: 8px;
+    padding: 0 4px 0 0;
+    max-width: 400px;
+    transition: all 0.3s ease;
+}
+
+.kina-bili-input-wrap:focus-within {
+    border-color: #FB7299;
+    box-shadow: 0 0 0 3px rgba(251, 114, 153, 0.1);
+}
+
+.kina-bili-input-prefix {
+    color: #8a8a9a;
+    font-size: 13px;
+    padding: 0 10px 0 14px;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.kina-bili-input-wrap input {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 10px 0 !important;
+    font-size: 14px;
+    flex: 1;
+    outline: none !important;
+}
+
+.kina-bili-input-wrap input:focus {
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+}
+
+/* 测试按钮和结果 */
+#kina-bili-test-btn {
+    margin-left: 10px;
+}
+
+#kina-bili-test-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.kina-bili-test-result {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f8f9fc;
+    border: 1px solid #e2e4e9;
+}
+
+.kina-bili-test-loading {
+    color: #8a8a9a;
+    text-align: center;
+    padding: 20px;
+}
+
+.kina-bili-test-success {
+    animation: fadeIn 0.4s ease;
+}
+
+.kina-bili-test-success h4 {
+    color: #2ed573;
+    margin: 0 0 16px 0;
+    font-size: 16px;
+}
+
+.kina-bili-test-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #e2e4e9;
+}
+
+.kina-bili-test-info img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 2px solid #FB7299;
+    object-fit: cover;
+}
+
+.kina-bili-test-info p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #3a3a4e;
+}
+
+.kina-bili-test-error {
+    animation: fadeIn 0.4s ease;
+}
+
+.kina-bili-test-error h4 {
+    color: #ff4757;
+    margin: 0 0 12px 0;
+    font-size: 16px;
+}
+
+.kina-bili-test-error p {
+    color: #5a5a6e;
+    margin: 0 0 16px 0;
+}
+
+.kina-bili-privacy-tip {
+    background: linear-gradient(135deg, #fff9e6 0%, #fff5d6 100%);
+    border: 1px solid #ffd700;
+    border-radius: 8px;
+    padding: 14px 18px;
+    color: #8a6d0b;
+    font-size: 13px;
+    line-height: 1.8;   行高:1.8;
+}
+
+.kina-bili-privacy-tip strong {
+    color: #6b5300;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }到{透明度：1；变换:translateY (0);｝
+}
+
+/* 表格样式 */
+.kina-bili-section-card .widefat {
+    border-radius: 8px;
+    overflow: hidden;   溢出:隐藏;
+    border: 1px solid #e2e4e9;   边框：1px实心#e2e4e9；
+}
+
+.kina-bili-section-card .widefat th {．kina-bili-section-card。宽度{
+    background: linear-gradient(135deg, #f8f9fc 0%, #eef0f5 100%);背景：线性梯度（135度，#f8f9fc 0%, #eef0f5 100%）；
+    color: #1a1a2e;   颜色:# 1a1a2e;
+    font-weight: 600;   粗细:600;
+    padding: 12px 16px;   填充：12px 16px；
+}
+
+.kina-bili-section-card .widefat td {．kina-bili-section-card。宽频td {
+    padding: 12px 16px;   填充：12px 16px；
+    color: #3a3a4e;   颜色:# 3a3a4e;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+    .kina-bili-admin-header {   ．kina-bili-admin-header {
+        padding: 24px;   填充:24 px;
+    }
+
+    .kina-bili-admin-header h1 {．Kina-bili-admin-header h1 {
+        font-size: 20px;   字体大小:20 px;
+    }
+
+    .kina-bili-section-card {   ．kina-bili-section-card {
+        padding: 20px;   填充:20 px;
+    }
+
+    .kina-bili-shortcode-grid {．kina-bili-shortcode-grid——
+        grid-template-columns: 1fr;
+    }
+
+    .kina-bili-test-info {   ．kina-bili-test-info——
+        flex-direction: column;   flex-direction:列;
+        text-align: center;   text-align:中心;
+    }
+}
