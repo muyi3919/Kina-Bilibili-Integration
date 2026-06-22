@@ -1,9 +1,11 @@
 <?php
 /**
  * Plugin Name: Kina Bilibili Integration
+ * Plugin URI:  https://kina.ink/2026/06/569/
  * Description: B站数据集成插件，支持个人资料、视频、追番、直播状态展示
  * Version: 1.0.5
  * Author: kina漫记
+ * Author URI:  https://kina.ink/
  * Text Domain: kina-bilibili
  */
 
